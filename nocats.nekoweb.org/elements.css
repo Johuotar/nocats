@@ -21,11 +21,15 @@
 }
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
-/*
 .follow {
-
+    mask-image: conic-gradient(
+    at bottom left,
+    transparent 9% 11%,
+    #fff 5% 15%,
+    transparent 21% 22%,
+    #fff 20% 25%
+    )
 }
-*/
 
 /* Style for your post box (must start with ".post-box") */
 .post-box {
