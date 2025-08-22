@@ -1,1 +1,5 @@
+ABOUT
 A static website
+
+PUBLISH
+Publish new version of site by creating zip of the nocats.nekoweb.org folder and upload it using nekoweb UI.
