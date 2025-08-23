@@ -13,7 +13,7 @@ body {
 
 #MainWrap {
 	margin: 0 auto;
-	width: 800px;
+	width: 1000px;
 	background-color: #F9F9F9;
 }
 
@@ -41,17 +41,22 @@ header {
 	
 }
 
+.navbar > a { /* the navbar class must make text visible on the black background where the navigation links are */
+    font-size: 14px;
+	color: white;
+}
+
 article1 {
 	margin: 10px;
 	padding: 10px;
-	width: 400px;
+	width: 500px;
 	float: left;
 }
 
 articlewide {
 	margin: 10px;
 	padding: 10px;
-	width: 600px;
+	width: 700px;
 	float: left;
 }
 
