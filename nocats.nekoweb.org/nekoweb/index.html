@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset=utf-8>
+	<title>nocats - linux</title>
+	<link href="/../styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="MainWrap"> <!-- THIS WRAPS THE WHOLE PAGE CONTENT -->
+
+<header> <!-- THIS IS HEADER CONTENT -->
+    <div id="head">
+       	<p>No cats</p>
+    </div>
+    
+    <div id="headertext"> <!-- TEXT FOR HEADER -->
+        <p>Website without cats</p>
+      <img src="/../images/nocatslogo.jpg" alt="no cats logo">
+      <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
+      <p>
+        Navigation:
+        <a href="/../" title="nocats homepage">Homepage</a>
+        <a href="/../linux/" title="linux guide">Linux guide</a>
+      </p>
+      <br><br>
+    </div>
+</header>
+
+<br class="clearfloat" />
+
+<img src="/../images/placeholder.png" width="300" alt="image placeholder">
+
+<article1>
+<h3>Making Website On Nekoweb Guide</h3>
+<p>This is page collects knowledge that I have learned through the heel.</p>
+
+<h4>Naming the html files</h4>
+<p>
+  Put each page in its own folder and name it index.html.
+  If you do this, the page will be loaded automatically when you write BASE_URL/your_site/your_subpage_folder to the browser and you dont need to write BASE_URL/your_site/your_subpage_folder.subpage.html
+  index.html is the standard for the main page that's served when you visit a domain. It works for all directories, not just domain root.
+  http://foo.com/bar is interpreted as http://foo.com/bar/index.html on the server.
+</p>
+
+<h4>Navigation to other pages on your site & paths to resources such as images:</h4>
+<p>
+It is best to use relative file paths so your pages will not be bound to your current base URL. Links will work locally (localhost) and even if you move to another host.
+
+Absolute:
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+Relative:
+<img src="/../images/picture.jpg" alt="placeholder">
+
+So site navigation on a page in a folder below the home page can be done with:
+<a href="/../" title="back to homepage">Homepage</a>
+<a href="/../another_sub_page/" title="another sub page in folder beneath home">Subpage</a>
+</p>
+
+</article1>
+
+<img class = "floatright" src="/../images/placeholder.png" width="300" alt="image placeholder">
+
+<br class="clearfloat" />
+
+<footer>
+  <table width="400" height="25" cellpadding="0" cellspacing="0">
+    <br>
+    <tr>This website does not use cookies and does not collect your information.</tr>
+  </table>
+</footer>
+
+
+</div> <!-- MainWrap END -->
+
+</body>
+
+</html>
