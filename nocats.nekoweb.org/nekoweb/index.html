@@ -32,38 +32,80 @@
 
 <br class="clearfloat" />
 
-<img src="/../images/placeholder.png" width="300" alt="image placeholder">
-
-<article1>
+<articlewide>
 <h3>Making Website On Nekoweb Guide</h3>
 <p>This is page collects knowledge that I have learned through the heel.</p>
 
 <h4>Naming the html files</h4>
 <p>
-  Put each page in its own folder and name it index.html.
-  If you do this, the page will be loaded automatically when you write BASE_URL/your_site/your_subpage_folder to the browser and you dont need to write BASE_URL/your_site/your_subpage_folder.subpage.html
-  index.html is the standard for the main page that's served when you visit a domain. It works for all directories, not just domain root.
-  http://foo.com/bar is interpreted as http://foo.com/bar/index.html on the server.
+  Put each page in its own folder and name it index.html. If you do this, the page will be loaded automatically when you write:
 </p>
+<p><code>
+  base_url/your_site/your_subpage_folder
+</code></p>
+<p>
+  to the browser and you dont need to write:
+</p>
+<p><code>
+  base_url/your_site/your_subpage_folder.subpage.html
+</code></p>
+
+<p>
+  index.html is the standard for the main page that's served when you visit a domain. It works for all directories, not just domain root.
+</p>
+<p><code>
+  http://foo.com/bar
+</code></p>
+<p>
+  is interpreted as
+</p>
+
+<p><code>
+  http://foo.com/bar/index.html
+</code></p>
+<p>
+  on the server.
+</p>
+
+<br>
 
 <h4>Navigation to other pages on your site & paths to resources such as images:</h4>
+
 <p>
 It is best to use relative file paths so your pages will not be bound to your current base URL. Links will work locally (localhost) and even if you move to another host.
-
-Absolute:
-<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
-
-Relative:
-<img src="/../images/picture.jpg" alt="placeholder">
-
-So site navigation on a page in a folder below the home page can be done with:
-<a href="/../" title="back to homepage">Homepage</a>
-<a href="/../another_sub_page/" title="another sub page in folder beneath home">Subpage</a>
 </p>
 
-</article1>
+<p>
+Absolute:
+</p>
+<p>
+<code>
+&lt;img src="https://www.website.com/images/picture.jpg" alt="picture"&gt;
+</code>
+</p>
 
-<img class = "floatright" src="/../images/placeholder.png" width="300" alt="image placeholder">
+<p>
+Relative:
+</p>
+<p>
+<code>
+&lt;img src="/../images/picture.jpg" alt="placeholder"&gt;
+</code>
+</p>
+
+<p>
+So site navigation on a page in a folder below the home page can be done with:
+</p>
+<code>
+<p>
+  &lt;a href="/../" title="back to homepage">Homepage&lt;/a&gt;
+</p>
+<p>
+  &lt;a href="/../another_sub_page/" title="another sub page in folder beneath home"&lt;Subpage&lt;/a&gt;
+</p>
+</code>
+
+</articlewide>
 
 <br class="clearfloat" />
 
