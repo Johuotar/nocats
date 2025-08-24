@@ -27,7 +27,7 @@
       </div>
 
       <div class="headersection_follow">
-        <p>stop clipping please</p>
+        <p>Huh?</p>
         <div class="center_vertical">
           <iframe class="followbutton" src="https://nekoweb.org/frame/follow" frameborder="0"></iframe>
         </div>
@@ -49,13 +49,353 @@
 <img src="/../images/muumifreedom.jpg" width="300" alt="muumi enjoys free software">
 
 <article1>
-<h3>Linux command reference</h3>
-<p>This is collection of Linux commands that I have found useful.</p>
+<h1>Linux reference</h1>
 
-<p>
-    shutdown, log out all users and do it NOW
+<br>
+<hr>
+
+<h2>Linux commands</h2>
+
+<h4>
+Get to a text terminal
+</h4>
+<pre>
+  CTRL+ALT+F3
+</pre>
+
+<h4>
+go back to the graphical terminal
+</h4>
+<pre>
+  CTRL+ALT+F2
+</pre>
+
+<h4>
+Get free root space in percentage
+</h4>
+<pre>
+  df | grep /dev/root | grep -o ..%
+</pre>
+
+<h4>
+Get disk use info recursively and sorted.
+</h4>
+<pre>
+  du -hsc * | sort -hr
+</pre>
+
+<h4>
+print partition sizes
+</h4>
+<pre>
+  lsblk
+</pre>
+
+<h4>
+Get partition labels
+</h4>
+<pre>
+  blkid
+</pre>
+
+<h4>
+Get information about groups user is in
+</h4>
+<pre>
+  groups
+</pre>
+
+<h4>
+Get computers ip address
+</h4>
+<pre>
+  ip addr
+</pre>
+
+<h4>
+Get computers serial number
+</h4>
+<pre>
+  sudo dmidecode -t system | grep Serial
+</pre>
+
+<h4>
+Print working directory
+</h4>
+<pre>
+  pwd
+</pre>
+
+<h4>
+Print file contents
+</h4>
+<pre>
+  cat
+</pre>
+
+
+<h4>
+Get information about directory such as permissions, time of last modification
+</h4>
+<pre>
+  ll
+</pre>
+
+<h4>
+Get free storage in Megabytes or Gigabytes
+</h4>
+<pre>
+  df -BG
+  df -BM
+</pre>
+
+<h4>
+Get file sizes in megabytes or gigabytes
+</h4>
+<pre>
+  ls -l --block-size=M
+  ls -l --block-size=G
+</pre>
+
+<h4>
+List information about computer
+</h4>
+<pre>
+Information about USB buses in the system and the devices connected to them
+  lsusb
+
+prints info about all PCI buses and devices
+  lspci -v | grep -I network
+
+Hardware Lister
+  lshw
+
+Only show the given class of hardware. Class can be found using lshw -short or lshw -businfo. 
+  lshw -C
+</pre>
+
+<h4>
+  Check disk health
+</h4>
+<pre>
+  smartctl -i /dev/sda
+</pre>
+
+<h4>
+  Check DNS of address with dig
+</h4>
+<pre>
+  dig google.com
+</pre>
+
+<h4>
+  finding devices in network with nmap
+</h4>
+<pre>
+  sudo nmap -sn 10.10.10.0/24
+</pre>
+
+<h4>
+  Search for a package by name or description
+</h4>
+<pre>
+  apt-cache search keyword
+  To get a list of all packages
+  apt-cache search
+</pre>
+
+<h4>
+  Shutdown immediately, logging out all users:
+</h4>
+<pre>
     sudo shutdown -h now
-</p>
+</pre>
+
+<br>
+<hr>
+
+<h2>Linux How-To</h2>
+
+<h4>Changing GRUB settings</h4>
+<pre>
+  cd /etc/default
+  sudo nano grub
+  sudo update-grub
+</pre>
+
+<h4>Package Management With apt</h4>
+<pre>
+  Fetch package listing from software repo and 3rd parties, but don't download anything
+  sudo apt update
+
+  Download and install updates for outdated packages (requires up to date package list)
+  sudo apt upgrade
+
+  As above, but with yes to all prompts
+  sudo apt upgrade -y
+
+  Remove unnecessary packages
+  sudo apt autoremove
+
+  Clean local reppackage files
+  sudo apt clean
+
+  Remove package
+  sudo apt remove *packagename*
+</pre>
+
+<h4>Searching for Files</h4>
+<pre>
+  list all files with the extension .txt. The . at the start denotes the current directory
+  find . -type f -name "*.txt"
+
+  find searches recursively in all the directories below the given path
+  If you want the search to start somewhere other than the current working directory, specify the path, for example:
+  find /etc -type f -name "*.conf"
+
+  This searches the /etc directory and all its subdirectories for regular files with the .conf extension.
+
+  Find folders called builds
+  find / -type d -name "builds"
+</pre>
+
+<h4>File & folder permissions</h4>
+<img src="/../images/linuxpermissions.png" alt="converting linux permissions numbers">
+<br>
+<h4>Changing Keyboard Language</h4>
+<pre>
+  Install the utility
+  sudo apt-get install x11-xkb-utils
+
+  Set keyboard language, e.g: finnish
+  setxkbmap fi
+</pre>
+
+<h4>Shredding Disk Securely</h4>
+<pre>
+  Get device name such as /dev/sdb but not /dev/sdb1, cause thats a partition.
+  lsblk
+
+  Then shred. v option for verbose.
+  sudo shred -vfz -n5 /dev/sdx
+
+  Where sdx is your drive.
+  The n5 means five passes of writeover.
+  z option sets all bits to zero after last iteration, meaning a total of six passes.
+</pre>
+
+<h4>Killing Processes</h4>
+<pre>
+  ps aux|grep processname
+  kill -9 9400
+</pre>
+
+<h4>Using Vim AKA vi Text Editor</h4>
+<pre>
+  If arrow keys result in inputs of A B C and D, you might be using the older Vi instead of  newer Vim.
+  This guide does not cover the old Vi.
+
+  Exit Vim (surprisingly difficult)
+  Press ESC to switch to normal mode. Type : followed by q! to quit without saving. Type wq to write & quit.
+
+  Search for a word
+  Press ESC to switch to normal mode. Type / followed by the word you are searching for.
+
+  Write text
+  Press i to get into Insert mode. Type the text.
+</pre>
+
+<h4>Managing Installed Kernels</h4>
+<pre>
+  List of installed kernels
+  dpkg --list | grep linux-image
+
+  Show currently used kernel
+  uname -r
+
+  Remove selected kernels
+  sudo apt purge linux-headers-5.6.11-050611  linux-headers-5.6.11-050611-lowlatency
+</pre>
+
+<h4>Ubuntu 24 LTS Full Disk Encryption Installation</h4>
+<pre>
+  The 24 LTS versions new Flutter based installer's custom setup UI is lacking.
+  Only way to do this with custom setup is to use 22 LTS and upgrade it after installation to 24 LTS.
+  This is because there is no option to create “physical volume for encryption”.
+
+  Example setup:
+  /boot 2 Gigabytes
+  EFI 255 MB
+  / encrypted disk, size is the rest of remaining storage
+
+  You can create swap file after OS is installed and upgraded to Ubuntu 24 if you wish to have swap.
+  This way you have encrypted swap space instead of unencrypted.
+</pre>
+
+<h4>Creating a Swap File</h4>
+<pre>
+  Swap is a part of your storage that has been set reserved for use as RAM.
+  It is used if your computer runs out of ordinary RAM, but it is slower, so the OS will prefer RAM over Swap.
+
+  First check if you already have swap space. You can have multiple, but you don't need more than one.
+    sudo swapon --show
+
+  If there is no output, you don't have swap space. You can also use free.
+    free -h
+
+  You should get output that shows if you have swap space.
+              total        used        free
+  Swap:       0B           0B          0B
+
+  The above output shows there is no swap space.
+
+  Check current disk usage with df command to ensure you don't try to use more space than you have.
+    df -h
+
+  Check the "Avail"(more is better) & "Use%"(less is better) sections of your drive.
+  The /dev/ means device, such as SSD. Do not be confused by any /dev/loop you might have,
+  they are pseudo-devices that make files accessible as a block device.
+  Look for sda or nvme0, or similar.
+
+  The amount of swap space you will need depends on your needs.
+  A common rule is to have 1x the amount of RAM you have in swap space.
+
+  Create the swap file in root directory using fallocate program
+    sudo fallocate -l 4G /swapfile
+
+  Check the swap space has been created
+    ls -lh /swapfile
+
+  The output should show the amount, e.g (4.0G) and the file (/swapfile)
+
+  The file still has to be turned into swap space. First prevent anyone but root from reading it.
+    sudo chmod 600 /swapfile
+
+  Check permissions have read and write for root only.
+    ls -lh /swapfile
+
+  Correct output shows -rw------- & root
+
+  Turn the file into swapfile. The output should say that the swapspace has been set up.
+    sudo mkswap /swapfile
+
+  Then enable the swap for use
+    sudo swapon /swapfile
+
+  Check that you have swap active just like before.
+    sudo swapon --show
+
+  Or with free
+    free -h
+
+  The OS will now use this swap space if RAM runs out, but it will currently not last if you
+  reboot your computer. Adding swap file to /etc/fstab file makes it permanent.
+  Make a backup of the file before making changes using copypaste command
+    sudo cp /etc/fstab /etc/fstab.bak
+
+  Then add the swap file to the /etc/fstab file
+    echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+</pre>
 
 </article1>
 

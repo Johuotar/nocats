@@ -41,8 +41,6 @@ body {
 .center_vertical {
 	width: 160px;
     height: 160px;
-    border-width:1px;
-    border-style: solid;
     display: inline-block;
 }
 
@@ -173,6 +171,25 @@ img.floatrightleftpadding {
 	margin-right: 3px;
 }
 
+/* Table of contents test
+.toc-list li > a > .title {
+  position: relative;
+  overflow: hidden;
+}
+
+.toc-list li > a .leaders::after {
+  position: absolute;
+  padding-left: .25ch;
+  content: " . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . "
+      ". . . . . . . . . . . . . . . . . . . . . . . ";
+  text-align: right;
+}
+ */
 /*mask-image: conic-gradient(
     at bottom left,
     transparent 9% 10%,
