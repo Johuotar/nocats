@@ -14,14 +14,16 @@
 <div id="MainWrap"> <!-- THIS WRAPS THE WHOLE PAGE CONTENT -->
 
 <header> <!-- THIS IS HEADER CONTENT -->
-    <div id="head">
-       	<p>No cats</p>
-    </div>
-    
-    <div id="headertext"> <!-- TEXT FOR HEADER -->
-        <p>Website without cats</p>
-      <img src="/images/nocatslogo.jpg" alt="no cats logo">
+    <div class="headersectionname">
+      <p>No Cats</p>
       <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
+      <div class ="nocatslogostyle">
+        <img src="/images/nocatslogo.jpg" width="64" height="64" alt="no cats logo">
+      </div>
+    </div>
+
+    <div class="headersectionnav"> <!-- TEXT FOR HEADER -->
+      <p>Website without cats</p>
       <div class = "navbar">
         Navigation:
         <a href="/linux/" title="linux guide">Linux Guide</a>
@@ -29,23 +31,25 @@
         <a href="/music/" title="music">Music</a>
         <a href="/games/" title="games">Games</a>
       </div>
-      <br><br>
     </div>
 </header>
 
-<br class="clearfloat" />
+<div class="container">
 
-<articlewide>
+<div class="contentsplit">
+
+<div class="articlewide">
 
   <div>
     <img class = "floatright" src="images/construction.gif" alt="under construction banner">
-    <br>
-    <img class = "floatright" src="images/muumiconstruction.jpg" alt="moomin build the indieweb">
+    <br><br>
+    <img class = "floatright" src="images/muumioops.jpg" width="220" height="220" alt="moomin build the indieweb">
   </div>
 
 <h3>Welcome to my personal website!</h3>
 <p>Besides creative works, I hope to collect useful information on this website so that it can be of use to users of Nekoweb and beyond. The design guideline of the site is that, unlike most 'funny' websites on Nekoweb, it has no pictures of cats on it.</p>
 
+<p>The website is in rough shape in some places since I'm basically vibe coding the CSS but instead of AI it's just try whatever copy pasted code I find from the internet</p>
 <p>
   Started developing: 21.8.2025<br>
   Plan for content:<br>
@@ -86,21 +90,28 @@
 </p>
 <br><br>
 
-</article1>
+</div> <!-- div class articlewide ENDS-->
 
-<br class="clearfloat" />
+<div class ="sidebar">
+  <p>
+    The 2D, sidescrolling RPG game The Spirit Engine from 2003 by Mark Pay, is being re-implemented in a modern game engine (GameMaker) as The Spirit Engine DX, and is going to release Q4 2025. Learn more from the link: https://www.thespiritengine.com/
+  </p>
+</div>
+
+</div> <!-- Content split ENDS-->
 
 <footer>
-  <table width="400" height="25" cellpadding="0" cellspacing="0">
+  <table height="25" cellpadding="0" cellspacing="0">
     <br>
     <tr>This website does not use cookies and does not collect your information.</tr>
   </table>
+  <div id="catdiv">
+    <p>Oh god how did this get here i'm not good with CSS</p>
+    <img class = "catimage" src="/images/cat.jpg" width="32" alt="what">
+  </div>
 </footer>
 
-<div id="catdiv">
-  <p>Oh god how did this get here i'm not good with CSS</p>
-  <img class = "floatright" src="/images/cat.jpg" width="80" alt="what">
-</div>
+</div> <!-- Container for flexbox END -->
 
 </div> <!-- MainWrap END -->
 
