@@ -1,9 +1,4 @@
-
-/* Custom CSS below */
-header, footer, section, article, aside { 
-display: block;
-}
-
+/* Main CSS file */
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -17,10 +12,10 @@ body {
 	background-color: #F9F9F9;
 }
 
-header {
+.headerclass{
 	color: #FFF;
 	background-color: #000000;
-	height: 210px;
+	height: 290px;
 	padding-left: 10px;
 	padding-bottom: 30px;
 	display: flex;
@@ -28,25 +23,59 @@ header {
 	justify-content: space-between;
 }
 
-.headersectionname {
+.headersection {
+	flex: 2;
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	font-style: inherit;
+}
+
+.headersection_wide {
+	flex: 4;
+}
+
+.headersection_follow {
 	flex: 1;
 }
 
-.headersectionnav {
-	flex: 3;
+.center_vertical {
+	width: 160px;
+    height: 160px;
+    border-width:1px;
+    border-style: solid;
+    display: inline-block;
 }
 
-#head {
-	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	font-size: 40px;
-	font-style: inherit;
-	margin-left: 10px;
+.followbutton {
+	position: relative;
+	margin: -30px auto 0 auto;
+	top: 50%;
+}
+
+.titlesplit{
+	display: flex;
+    flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.navbar {
+	display: flex;
+    flex-direction: row;
+	justify-content: flex-start;
+	background-color: darkgrey;
+	gap: 12px;
+}
+
+.navbar > a { /* the navbar class must make text visible on the black background where the navigation links are */
+    font-size: 20px;
+	color: white;
+	background-color: darkgrey;
 }
 
 #headertext {
 	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-size: 16px;
-	margin-left: 20px;
+	margin-right: 20px;
 	margin-top: 5px;
 }
 
@@ -71,11 +100,6 @@ header {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-.navbar > a { /* the navbar class must make text visible on the black background where the navigation links are */
-    font-size: 14px;
-	color: white;
 }
 
 .contentsplit {
@@ -148,3 +172,11 @@ img.floatrightleftpadding {
 	float: right;
 	margin-right: 3px;
 }
+
+/*mask-image: conic-gradient(
+    at bottom left,
+    transparent 9% 10%,
+    #fff 5% 8%,
+    transparent 21% 22%,
+    #fff 2% 5%
+	)*/

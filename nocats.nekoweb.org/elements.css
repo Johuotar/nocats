@@ -23,13 +23,14 @@
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
 .follow {
     color:white;
-    /*mask-image: conic-gradient(
-    at bottom left,
-    transparent 9% 10%,
-    #fff 5% 8%,
-    transparent 21% 22%,
-    #fff 2% 5%
-    )*/
+    rotate: 8deg;
+    transition: rotate 2s;
+}
+
+.follow:hover {
+    color:white;
+    rotate: 27deg;
+    transition: rotate 2s;
 }
 
 /* Style for your post box (must start with ".post-box") */
