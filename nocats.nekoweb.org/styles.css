@@ -131,7 +131,9 @@ footer {
 	width: 100%;
 	margin-top: auto;
 	margin-bottom: 0px;
-	padding-left: 0px;
+	padding-left: 4px;
+	padding-right: 0px;
+	padding-top: 8px;
 	display: flex;
     flex-direction: row;
 	justify-content: space-between
@@ -142,6 +144,12 @@ footer {
     height:0;
     font-size: 1px;
     line-height: 0px;
+}
+
+img.drawing {
+	float: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 img.floatright {
