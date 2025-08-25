@@ -38,6 +38,7 @@
 </head>
 
 <body>
+	<div id="MainWrap"> <!-- THIS WRAPS THE WHOLE PAGE CONTENT -->
 
 	<header> <!-- THIS IS HEADER CONTENT -->
 	<div class="headerclass">
@@ -71,7 +72,8 @@
 
 	</div>
 	</header>
-
+	
+	<br><br>
 	<input type="hidden" id="namefield">
 	<div style="background-color:#fff;position:absolute;top:90;width:200px;height:50px;">
 		<audio id="music" src="music/music1.wav" type="audio/wav" loop></audio>
@@ -82,6 +84,7 @@
 			Made using: HTML5 Game Programming Tutorial, by Max Wihlborg & Simple JavaScript Inheritance library by John Resig (http://ejohn.org/ ; MIT Licensed)
 		</p>
 	</div>
+	<br>
 
 	<script>
 		// create, initiate and run game
@@ -95,6 +98,9 @@
 		document.getElementById('music').pause();
 	};
 	</script>
+
+</div> <!-- MainWrap END -->
+
 </body>
 
 </html>
