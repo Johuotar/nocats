@@ -11,6 +11,15 @@
     background-repeat: no-repeat;
     color: #b08271;
     font-size: 12px;
+    transition: transform 0.5s ease-in-out;
+}
+.site-box:hover {
+    text-align: center;
+    background-image: url(/https://nocats.nekoweb.org/images/nocatslogo.jpg); /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
+    background-repeat: no-repeat;
+    color: #b08271;
+    font-size: 12px;
+    transform: scale(1.1)
 }
 .site-box > a > p {
     color: var(--darkbrown);
