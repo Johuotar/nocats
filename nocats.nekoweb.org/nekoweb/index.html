@@ -48,7 +48,9 @@
 
 <articlewide>
 <h2>Making Website On Nekoweb Guide</h2>
-<p>This is page collects knowledge that I have learned through the heel.</p>
+<p>This is page collects knowledge that I have learned by bashing my head against the wall until I reached enlightenment.
+   I'm a beginner merely trying to collect useful information rather than lay down the law,
+   so don't take these as absolute truths.</p>
 
 <br>
 <h3>Philosophy</h3>
@@ -87,6 +89,13 @@
 
 <br>
 <h3>General web development</h3>
+
+<h4>Reload the your edited page with CTRL + SHIFT + R</h4>
+<p>
+   Since you visit your page regularly, your browser loads some of the site data from locally stored files.
+    A hard refresh - CTRL + SHIFT + R - makes the browser reload all the data from the web, making your edits to the site appear.
+     "Use it early, use it often!"
+</p>
 
 <h4>Naming the html files</h4>
 <p>
@@ -155,7 +164,14 @@ So site navigation on a page in a folder below the home page can be done with:
 </p>
 </code>
 
-<br>
+<h4>Add HTML to a site so it does not get interpreted, but is instead presented as code by using HTML entities</h4>
+<p>Common problems might be having greater than and less than signs be interpreted as HTML code, causing code example to turn into actual element!</p>
+<p>HTML entities fix this. Entities look like this: &entity_name</p>
+<p>When you want a &lt; write & and then lt; instead.</p>
+<p>When you want a &gt; write & and then gt; instead.</p>
+<a href="https://www.w3schools.com/html/html_entities.asp">Learn more at w3schools.</a>
+
+<br><br>
 <h3>Checklist of things you might want</h3>
 
 <h4>favicon</h4>
@@ -163,10 +179,28 @@ So site navigation on a page in a folder below the home page can be done with:
 
 <h4>Style your elements.css and the sitebox</h4>
 <p>elements.css defines the sitebox AKA the preview will look like. Make something eye catching. Just don't make it too obnoxious.</p>
+<p>https://jbc.lol/utils/nekobox/ is a tool that can help with both sitebox and RSS feed customization.</p>
 
-<h4>Create rss feed</h4>
-<p>TODO</p>
+<h4>Classic 88x31 GIFs</h4>
+<p>Look at examples from link below:</p>
+<a href="https://cyber.dabamos.de/88x31/index.html"><img src="/images/88by31.gif" alt="icon examples at cyber.dabamos.de"></a>
 
+<h4>Create RSS feed</h4>
+<p>
+  RSS means Really Simple Syndication. It is a way of alerting subscribers about site updates and it does so without requiring an you to collect
+  a mailing list or any account information of any kind. I recommend using the following guide to create your RSS feeds, it's not that hard:
+</p>
+<a href="https://caffeineandlasers.neocities.org/blogs/rss">Caffeine and Lasers RSS guide at Neocities</a>
+
+<p>Example RSS feed icon that links to your feed for RSS readers:
+  &lt;a href="https://yoursite.nekoweb.org/feed.xml"&gt;&lt;img src="/images/rss_logo.png" alt="rss feed" style="width:32px; height:32px;"&gt; Your Site Feed&lt;/a&gt;
+</p>
+
+<p>Add your RSS file to Nekoweb in the settings of your site:</p>
+<p>https://nekoweb.org/settings/YOURSITENAMEHERE.nekoweb.org?page=rss</p>
+
+<P>How RSS posts appear on Nekoweb can be edited. The styling is done in elements.css, same as the sitebox.
+   https://jbc.lol/utils/nekobox/ is a tool that can help with both sitebox and RSS feed customization.</P>
 </articlewide>
 
 <br class="clearfloat" />

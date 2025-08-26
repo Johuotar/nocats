@@ -111,6 +111,31 @@ body {
 	flex: 1;
 }
 
+/* links in feed class */
+.feed > a {
+	text-decoration: none;
+}
+
+/* unvisited link */
+.feed > a:link {
+  color: black;
+}
+
+/* visited link */
+.feed > a:visited {
+  color: black;
+}
+
+/* mouse over link */
+.feed > a:hover {
+  color: black;
+}
+
+/* selected link */
+.feed > a:active {
+  color: black;
+} 
+
 article1 {
 	margin: 10px;
 	padding: 10px;

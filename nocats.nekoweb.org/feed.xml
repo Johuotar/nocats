@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>No Cats Feed</title>
+  <description>The feed will have updates about things related to the site or about major interests of mine.</description>
+  <link>https://nocats.nekoweb.org/</link>
+  <!-- Remember to update this when making adding new item to the feed, use https://timestampgenerator.com/ and choose rfc 2822 -->
+  <lastBuildDate>
+    Tue, 26 Aug 2025 20:33:13 +0200
+  </lastBuildDate>
+  <!-- 1440 is once per day -->
+  <ttl>1440</ttl>
+
+
+  <item>
+    <title>Official test of No Cats RSS feed</title>
+    <description>
+      Test feed please ignore
+    </description>
+    <link>https://nocats.nekoweb.org/</link>
+    <pubDate>
+      Tue, 26 Aug 2025 20:33:13 +0200
+    </pubDate>
+  </item>
+
+  <item>
+    <title>Launching of No Cats Feed</title>
+    <description>
+      No Cats website has RSS feed now.
+    </description>
+    <link>https://nocats.nekoweb.org/</link>
+    <pubDate>
+      Tue, 26 Aug 2025 19:33:45 +0000
+    </pubDate>
+  </item>
+
+</channel>
+</rss>
