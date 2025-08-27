@@ -12,7 +12,7 @@
     background-position: left 4em bottom 60px;
     color: #b08271;
     font-size: 12px;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.0s ease-in-out;
 }
 .site-box:hover {
     text-align: center;
@@ -21,7 +21,7 @@
     background-position: left -1em bottom 60px;
     color: #b08271;
     font-size: 12px;
-    transform: translate(20px, 0px);
+    transform: translate(25px, 0px);
 }
 .site-box > a > p {
     color: var(--darkbrown);
