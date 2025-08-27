@@ -179,28 +179,40 @@ So site navigation on a page in a folder below the home page can be done with:
 
 <h4>Style your elements.css and the sitebox</h4>
 <p>elements.css defines the sitebox AKA the preview will look like. Make something eye catching. Just don't make it too obnoxious.</p>
-<p>https://jbc.lol/utils/nekobox/ is a tool that can help with both sitebox and RSS feed customization.</p>
+<p><a href="https://jbc.lol/utils/nekobox/" alt="nekobox">Nekobox</a> is a tool that can help with both sitebox and postbox (RSS feed) customization.</p>
 
 <h4>Classic 88x31 GIFs</h4>
 <p>Look at examples from link below:</p>
 <a href="https://cyber.dabamos.de/88x31/index.html"><img src="/images/88by31.gif" alt="icon examples at cyber.dabamos.de"></a>
 
-<h4>Create RSS feed</h4>
+<h3>Create RSS feed</h3>
+<h4>Basics of RSS feed</h4>
 <p>
   RSS means Really Simple Syndication. It is a way of alerting subscribers about site updates and it does so without requiring an you to collect
-  a mailing list or any account information of any kind. I recommend using the following guide to create your RSS feeds, it's not that hard:
+  a mailing list or any account information of any kind. I recommend using the following guide to create your RSS feeds, it's not that hard, hence the name.
 </p>
 <a href="https://caffeineandlasers.neocities.org/blogs/rss">Caffeine and Lasers RSS guide at Neocities</a>
 
-<p>Example RSS feed icon that links to your feed for RSS readers:
+<h4>Subscribe to RSS Feeds</h4>
+<p>You can download RSS reader software to keep up to date with Nekoweb sites. You can also use them to confirm your RSS feed works.
+   I recommend <a href="https://github.com/martinrotter/rssguard" alt="RSS Guard github link">RSS Guard (GitHub)</a> which is free & GPL-3.0 licensed.</p>
+
+<h4>Add RSS Icon to Your Site</h4>
+<p>Example RSS feed icon that links to your feed for RSS readers (You need to provide the icon in images folder yourself):
   &lt;a href="https://yoursite.nekoweb.org/feed.xml"&gt;&lt;img src="/images/rss_logo.png" alt="rss feed" style="width:32px; height:32px;"&gt; Your Site Feed&lt;/a&gt;
 </p>
 
-<p>Add your RSS file to Nekoweb in the settings of your site:</p>
-<p>https://nekoweb.org/settings/YOURSITENAMEHERE.nekoweb.org?page=rss</p>
+<h4>RSS feed and Nekoweb Features</h4>
+<p>So you have a functioning RSS feed? You're not done though. Nekoweb has unique features for RSS feeds. Learn more at: <a href="https://joosh.help/rss" alt="joosh rss tutorial">joosh.help/rss</a></p>
 
-<P>How RSS posts appear on Nekoweb can be edited. The styling is done in elements.css, same as the sitebox.
-   https://jbc.lol/utils/nekobox/ is a tool that can help with both sitebox and RSS feed customization.</P>
+<p>Ensure you have added title, link, guid and pubdate to your posts in the xml file for all Nekoweb RSS features to work. Also add your RSS file to Nekoweb in the settings of your site:</p>
+<p>https://nekoweb.org/settings/YOURSITENAMEHERE.nekoweb.org?page=rss</p>
+<p>When you have everything above set correctly and you make rss update, your rss post should appear here <a href="https://nekoweb.org/feed" alt="nekoweb feed page">here</a></p>
+
+<h4>Style your Nekoweb RSS Posts</h4>
+<p>How RSS posts appear on Nekoweb can be edited. The styling is done in elements.css, same as the sitebox.</p>
+<p><a href="https://jbc.lol/utils/nekobox/" alt="nekobox">Nekobox</a> can be used for developing your postbox (RSS feed), just like it helps with sitebox.</p>
+
 </articlewide>
 
 <br class="clearfloat" />

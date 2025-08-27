@@ -6,31 +6,20 @@
   <link>https://nocats.nekoweb.org/</link>
   <!-- Remember to update this when making adding new item to the feed, use https://timestampgenerator.com/ and choose rfc 2822 -->
   <lastBuildDate>
-    Tue, 26 Aug 2025 20:33:13 +0200
+    Wed, 27 Aug 2025 19:00:18 +0200
   </lastBuildDate>
   <!-- 1440 is once per day -->
   <ttl>1440</ttl>
 
-
   <item>
-    <title>Official test of No Cats RSS feed</title>
+    <title>27.8.2025: The RSS update</title>
     <description>
-      Test feed please ignore
+      No Cats now has a RSS that works with Nekoweb's RSS features! The Nekoweb guide is also getting updated with this information.
     </description>
-    <link>https://nocats.nekoweb.org/</link>
+    <link>https://nocats.nekoweb.org/feed/#feed5</link>
+    <guid>rss5</guid>
     <pubDate>
-      Tue, 26 Aug 2025 20:33:13 +0200
-    </pubDate>
-  </item>
-
-  <item>
-    <title>Launching of No Cats Feed</title>
-    <description>
-      No Cats website has RSS feed now.
-    </description>
-    <link>https://nocats.nekoweb.org/</link>
-    <pubDate>
-      Tue, 26 Aug 2025 19:33:45 +0000
+      Wed, 27 Aug 2025 19:00:18 +0200
     </pubDate>
   </item>
 

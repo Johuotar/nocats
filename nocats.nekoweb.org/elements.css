@@ -7,19 +7,21 @@
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://nekoweb.org/assets/siteboxes.png */
 .site-box {
     text-align: center;
-    background-image: url(/https://nocats.nekoweb.org/images/nocatslogo.jpg); /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
+    background-image: url(https://nocats.nekoweb.org/nocats.nekoweb.org/images/catsmall.jpg); /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
     background-repeat: no-repeat;
+    background-position: left 4em bottom 60px;
     color: #b08271;
     font-size: 12px;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 .site-box:hover {
     text-align: center;
-    background-image: url(/https://nocats.nekoweb.org/images/nocatslogo.jpg); /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
+    background-image: url(https://nocats.nekoweb.org/nocats.nekoweb.org/images/catsmall.jpg); /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
     background-repeat: no-repeat;
+    background-position: left -1em bottom 60px;
     color: #b08271;
     font-size: 12px;
-    transform: scale(1.1)
+    transform: translate(20px, 0px);
 }
 .site-box > a > p {
     color: var(--darkbrown);
@@ -44,11 +46,11 @@
 
 /* Style for your post box (must start with ".post-box") */
 .post-box {
-    background-color: #fff2cc;
-    border: 4px solid #ecbfa6;
-    padding: 15px;
+    background-color: lightgrey;
+    border: 3px dotted white;
+    padding: 12px;
     border-radius: 5px;
-    color: #634c53;
+    color: black;
     font-weight: normal;
 }
 

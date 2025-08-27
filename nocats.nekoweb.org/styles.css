@@ -116,25 +116,22 @@ body {
 	text-decoration: none;
 }
 
-/* unvisited link */
+/* unvisited link 
 .feed > a:link {
   color: black;
 }
 
-/* visited link */
 .feed > a:visited {
   color: black;
 }
 
-/* mouse over link */
 .feed > a:hover {
   color: black;
 }
 
-/* selected link */
 .feed > a:active {
   color: black;
-} 
+} */
 
 article1 {
 	margin: 10px;
