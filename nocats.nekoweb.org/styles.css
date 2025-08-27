@@ -216,8 +216,8 @@ img.floatrightleftpadding {
 	}
 	
 	img {
-	  width: 30vmin;
-	  height: 20vmin;
+	  width: 10vmin;
+	  height: 15vmin;
 	  object-fit: cover;
 	  object-position: top;
 	}
@@ -244,11 +244,11 @@ img.floatrightleftpadding {
 
 .slides li:target {
 	z-index: 3;
-	-webkit-animation: slide 1s 1;
+	-webkit-animation: slide 0.33s 1;
 }
   
   .slides li:not(:target) {
-	-webkit-animation: hidden 1s 1;
+	-webkit-animation: hidden 0.33s 1;
   }
   
   @keyframes slide {
