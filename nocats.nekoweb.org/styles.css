@@ -295,3 +295,49 @@ img.floatrightleftpadding {
     transparent 21% 22%,
     #fff 2% 5%
 	)*/
+
+/* hidden link */
+.hiddenlink {
+	text-decoration: none;
+	color: inherit;
+}
+
+.hiddenlink > a:link {
+  color: inherit;
+}
+
+.hiddenlink > a:visited {
+  color: inherit;
+}
+
+.hiddenlink > a:hover {
+  color: inherit;
+}
+
+.hiddenlink > a:active {
+  color: inherit;
+}
+
+.cuneiformdiv{
+	color: #000000;
+	background-color: #FFF;
+	padding-right: 10px;
+	padding-bottom: 30px;
+	display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+}
+.cuneiformchoicediv {
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	padding-right: 12px;
+	font-style: inherit;
+}
+.cuneiformchoice {
+	flex: 2;
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-style: inherit;
+}
