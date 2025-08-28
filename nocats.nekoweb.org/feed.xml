@@ -6,10 +6,22 @@
   <link>https://nocats.nekoweb.org/</link>
   <!-- Remember to update this when making adding new item to the feed, use https://timestampgenerator.com/ and choose rfc 2822 -->
   <lastBuildDate>
-    Wed, 27 Aug 2025 19:00:18 +0200
+    Thu, 28 Aug 2025 20:14:16 +0200
   </lastBuildDate>
   <!-- 1440 is once per day -->
   <ttl>1440</ttl>
+
+  <item>
+    <title>28.8.2025: Art and Secret Update</title>
+    <description>
+      The Art page is finally in a shape where it is actually somewhat usable. I also hid a secret to this site, can you find it? (It's not a cat)
+    </description>
+    <link>https://nocats.nekoweb.org/feed/#feed6</link>
+    <guid>rss6</guid>
+    <pubDate>
+      Thu, 28 Aug 2025 20:14:16 +0200
+    </pubDate>
+  </item>
 
   <item>
     <title>27.8.2025: The RSS update</title>
