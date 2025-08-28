@@ -154,7 +154,6 @@ Print file contents
   cat
 </pre>
 
-
 <h4>
 Get information about directory such as permissions, time of last modification
 </h4>
@@ -267,11 +266,11 @@ Only show the given class of hardware. Class can be found using lshw -short or l
 
 <h4>Searching for Files</h4>
 <pre>
-  list all files with the extension .txt. The . at the start denotes the current directory
+  List all files with the extension .txt. The . at the start denotes the current directory
   find . -type f -name "*.txt"
 
-  find searches recursively in all the directories below the given path
-  If you want the search to start somewhere other than the current working directory, specify the path, for example:
+  find searches recursively in all the directories below the given path.
+  If you want the search to start somewhere other than the current working directory, specify the path:
   find /etc -type f -name "*.conf"
 
   This searches the /etc directory and all its subdirectories for regular files with the .conf extension.

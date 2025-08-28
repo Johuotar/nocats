@@ -229,16 +229,17 @@ img.floatrightleftpadding {
 	height: 100vmin;
 	
 	li {
-	  width: 75vmin;
-	  height: 100vmin;
-	  position: absolute;
-	  z-index: 1;
+		width: 75vmin;
+		height: 100vmin;
+		position: absolute;
+		z-index: 1;
+		list-style-type: none 
 	}
 	
 	img {
-	  height: 100vmin;
-	  object-fit: cover;
-	  object-position: top;
+		height: 100vmin;
+		object-fit: cover;
+		object-position: top;
 	}
 }
 
@@ -247,27 +248,37 @@ img.floatrightleftpadding {
 	-webkit-animation: slide 0.33s 1;
 }
   
-  .slides li:not(:target) {
+.slides li:not(:target) {
 	-webkit-animation: hidden 0.33s 1;
-  }
-  
-  @keyframes slide {
+}
+
+@keyframes slide {
 	0% {
-	  transform: translateY(-100%);
+		transform: translateY(-100%);
 	}
 	100% {
-	  transform: translateY(0%);
+		transform: translateY(0%);
 	}
-  }
-  
-  @keyframes hidden {
+}
+
+@keyframes hidden {
 	0% {
-	  z-index: 2;
+		z-index: 2;
 	}
 	100% {
-	  z-index: 2;
+		z-index: 2;
 	}
-  }
+}
+
+.thumbnailrow {
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+}
+
+.thumbnails {
+	width: 300px;
+}
 
 /* Table of contents test
 .toc-list li > a > .title {
