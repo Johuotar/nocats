@@ -6,17 +6,29 @@
   <link>https://nocats.nekoweb.org/</link>
   <!-- Remember to update this when making adding new item to the feed, use https://timestampgenerator.com/ and choose rfc 2822 -->
   <lastBuildDate>
-    Thu, 28 Aug 2025 20:14:16 +0200
+    Sat, 30 Aug 2025 21:19:25 +0200
   </lastBuildDate>
   <!-- 1440 is once per day -->
   <ttl>1440</ttl>
 
   <item>
+    <title>30.8.2025: Old Art Update</title>
+    <description>
+      The Art page now has some older art practice that I made, the kind of stuff you don't usually share. Scary!
+    </description>
+    <link>https://nocats.nekoweb.org/feed#feed7</link>
+    <guid>rss7</guid>
+    <pubDate>
+      Sat, 30 Aug 2025 21:19:25 +0200
+    </pubDate>
+  </item>
+  
+  <item>
     <title>28.8.2025: Art and Secret Update</title>
     <description>
       The Art page is finally in a shape where it is actually somewhat usable. I also hid a secret to this site, can you find it? (It's not a cat)
     </description>
-    <link>https://nocats.nekoweb.org/feed/#feed6</link>
+    <link>https://nocats.nekoweb.org/feed#feed6</link>
     <guid>rss6</guid>
     <pubDate>
       Thu, 28 Aug 2025 20:14:16 +0200
@@ -28,7 +40,7 @@
     <description>
       No Cats now has a RSS that works with Nekoweb's RSS features! The Nekoweb guide is also getting updated with this information.
     </description>
-    <link>https://nocats.nekoweb.org/feed/#feed5</link>
+    <link>https://nocats.nekoweb.org/feed#feed5</link>
     <guid>rss5</guid>
     <pubDate>
       Wed, 27 Aug 2025 19:00:18 +0200

@@ -217,7 +217,7 @@ img.floatrightleftpadding {
 	
 	img {
 	  width: 10vmin;
-	  height: 15vmin;
+	  height: 10vmin;
 	  object-fit: cover;
 	  object-position: top;
 	}
@@ -225,20 +225,21 @@ img.floatrightleftpadding {
 
 .slides {
 	overflow: hidden;
-	width: 75vmin;
-	height: 100vmin;
+	height: 80vmin;
+	width: 85vmin;
 	
 	li {
-		width: 75vmin;
-		height: 100vmin;
+		height: 80vmin;
+		width: 85vmin;
 		position: absolute;
 		z-index: 1;
 		list-style-type: none 
 	}
 	
 	img {
-		height: 100vmin;
-		object-fit: cover;
+		height: 80vmin;
+		width: 85vmin;
+		object-fit: scale-down;
 		object-position: top;
 	}
 }
