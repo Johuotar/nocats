@@ -49,53 +49,54 @@
 <article1>
 <h1>Space Station 13 Guides</h1>
 
-<h2>These tips and guides apply to Monkestation. Read wiki tutorials before this.</h2>
+<h2>These tips and guides apply to Monkestation. Read wiki tutorials before this as these do not contain all the information you'll need.</h2>
 
 <br>
 <hr>
 
 <h2>CONNECTING TO MONKESTATION</h2>
-<p>
-Instead of using Byond, you can also connect to the server by writing the address to browser. Generally you get best ping using the relay closest to you.
-byond://warsaw.monkestation.com:3121 |Monkestation MRP (EU Relay - Warsaw, PL)
-byond://useast.monkestation.com:3121 |Monkestation MRP (US-East Relay - Ashburn, VA)
-byond://play.monkestation.com:3121 |Monkestation MRP (Direct)
-</p>
+<p>Instead of using Byond, you can also connect to the server by writing the address to browser. Generally you get best ping using the relay closest to you.</p>
+<p>byond://warsaw.monkestation.com:3121 | Monkestation MRP (EU Relay - Warsaw, PL)</p>
+<p>byond://useast.monkestation.com:3121 | Monkestation MRP (US-East Relay - Ashburn, VA)</p>
+<p>byond://play.monkestation.com:3121 | Monkestation MRP (Direct)</p>
 
+<h2>CONTROLS</h2>
+<h4>Using PDA from your belt</h4>
+<p>Drag PDA from your belt to your sprite to use it without taking it to your hand. This is useful to stealthily use your PDA uplink as traitor.</p>
 
-<h2>TIPS AND TRICKS TO CONTROLS</h2>
-<h4>Using PDA</h4>
-<p>Drag PDA from your belt to your sprite to use it without taking it to your hand.</p>
-
-<h4>
-Carrying a person on your back
-</h4>
+<h4>Carrying a person on your back</h4>
 <p>Carry another by aggressive grab on someone lying down. Then drag them to yourself. OR Double click drag on them then drag their sprite onto you.</p>
 
-<h4>Show item to another</h4>
+<h4>Show item to others</h4>
 <p>Shift middleclick item on hand to show it to others. It appears in a thought bubble.</p>
+
+<h4>Point at hotkey</h4>
+<p>Shift right click objects, people or locations to point at objects. It sends and arrow from you to the target that others can see.
+   Use it to tell people ignoring you that you have something to say to them.</p>
+
+<h4>Moving objects without picking them up</h4>
+<p>This is important to avoid getting stuck in tight paths in maintenance when dragging something such as a janitorial cart or a box.
+   Use CTRL + left click to drag something. Then click on a tile adjacent to you and the dragged object. The object will move to that tile provided nothing is in the way.</p>
+
+<h4>Moving crates on shelves</h4>
+<p>Drag it as usual. Click and drag it onto the shelf. Thats also how you get it off. - Hold lmb and move your cursor over the shelf, then let go</p>
 
 <h4>Stacking hats in pile of hats and removing them from the stack</h4>
 <p>Shift right click pile of hats to remove hat. Spinning/flipping emote with hat on head removes hats too.</p>
 
-<h4>Moving crates on shelves</h4>
-<p>Drag it on. Click and drag it onto the shelf. Thats also how you get it off. like, hold lmb and move your cursor over the shelf, then let go</p>
+<h2>NAVIGATION</h2>
+<h4>Use navigation feature and web map to find where to go</h4>
+<p>Monkestation has many maps in rotation, which is difficult for new players to get used to. Go to the Status tab in the menu and you can see name of the map.
+   There is a link to a map next to its name.</p>
+<p>In the bottom right corner of the view is a Navigation button that lets you search for locations. Pro tip: In the search science is not called science but research</p>
 
-<h2>GUIDE TO NAVIGATION</h2>
-<h4>
-Port, Starboard and stern
-</h4>
-<p>Port is left side
-Starboard is right side
-Stern is the back side
+<h4>What are Port, Starboard, Stern, Bow, Beam and Quarter?</h4>
+<p>Port is left side, Starboard is right side, Stern is the back side.</p>
+<p>Bow is top, Beam is middle, Quarter is bottom.</p>
 
-Bow is top
-Beam is middle
-Quarter is bottom
+<p>Therefore Port quarter solars is the southwest solars. Starboard quarter is southeast.</p>
 
-So Port quarter solars is southwest solars. Starboard quarter is southeast.</p>
-
-<h2>GUIDE TO ENGINEERING</h2>
+<h2>ENGINEERING</h2>
 <h4>Improve your tools and equipment</h4>
 <p>Science can research better tools for engineers. Crowbar and wirecutter can be replaced with Jaws of life that has the functions of both.
    Hand drill has functions of screwdriver and wrench. Switch between the mode by activating the tool in hand. Make them at the lathe after science has unlocked them.</p>
@@ -103,25 +104,68 @@ So Port quarter solars is southwest solars. Starboard quarter is southeast.</p>
 <h4>Use both mouse buttons when using tools</h4>
 <p>Some construction/deconstruction tasks can require right click instead of left click. e.g deconstruct a shelf with wrench using right click. Try things out!</p>
 
+<h4>Using Rapid Construction Device</h4>
+<p>Using RCD consumes some of its charge. Activate in hand to change what you want to build. Left lick to build, right click at the target to deconstruct.
+   Some objects are too sturdy to be deconstructed with RCD, such as reinforced walls.</p>
 
-<h4>SOLAR ARRAY SMES INPUT, OUTPUT & HOTWIRING</h4>
-<p>When setting up solars, always set SMES output 10 or more less than the input of solars. 
-  This leaves some power to charge the SMES so it can power station even if there is no input from solars. 
-  Wiring solars directly to power grid without SMES between has the usual hotwiring risks, meaning anyone touching electrified door gets hurt worse. 
+<h4>The power grid</h4>
+<p>This is how power travels on the station: Power sources > SMES > APC > Machines/computers/lights (Can be wired or wireless connection depending on device)</p>
+<p>All the power on the station is sourced from power sources such as the supermatter engine or solar arrays. Then it is (at least conventionally) connected with wires to SMES storage machines.
+  These machines are then connected to APC's, or Area Power Controllers, which power rooms across the station.
+   Most devices are powered without a cable connection by being in the area where the APC is. Some require cable connection to their tile.
+  Protip: The entirety of the station is connected with power wires that go all the way to the engineering. If all wires to an APC are cut it stops charging power and starts running of its battery.
+    As the battery runs out, APC automatically stop distributing power the least important devices, with everything vital to people staying alive losing power only when the battery is completely empty.</p>
+
+<h4>Repairing power failure</h4>
+<p>Power not working in a department? Check maintenance wires and APC's are connected. Multitool can check that power cables have power. You can also lay entirely new wire paths to power sources. This also creates redundancy.</p>
+<p>Protip: Dont click the APC link wires on the floor with your multitool though, that makes you attack it making you look stupid.</p>
+<p>Protip 2: Mice can chew cables, so kill any you see! Floor tiles hide the cables and protect them from mice, but then you need a T-Ray scanner to see the wires.</p>
+
+<h4>The atmospheric pipes</h4>
+<p>Just like power comes from the engine via wires, breathable air comes from atmospheric engineering department via pipes (distribution) and returns to it using another pipe network (waste).
+  If pipes to a room are broken the air circulation stops and eventually oxygen can run out while carbon dioxide builds up.</p>
+
+<h4>Configuring engine SMES</h4>
+<p>Set up SMES to input maximum, which is 200, and send out a bit less, 190. This leaves some power to store on the SMES itself so it can power station even if the input stops. 
+  Wiring engine directly to power grid without SMES between is called hotwiring.
+   Hotwiring means the power output is not limited so all power goes to the grid, meaning anyone touching electrified door gets hurt worse. 
   Solar output is low enough that this might not matter however.</p>
 
+<h4>Configuring solar array SMES</h4>
+<p>When setting up solars, always set SMES output 10 or more less than the input of solars. 
+  This leaves some power to charge the SMES so it can power station even if there is no input from solars. 
+  Wiring solars directly to power grid without SMES between has the usual hotwiring risks.
+  Solar output is low enough that this might not matter however.</p>
 
-<h4>
-Precooled nitrogen flash coolant (on some stations)
-</h4>
+<h4>Nitrogen flash coolant (on some stations)</h4>
 <p>Some stations have coolant ready for if supermatter gets on fire. Get acquainted with your station!</p>
 
+<h4>Repairing robots, IPC and androids</h4>
+<p>They can be repaired by using welder for brute damage and wires for burn.</p>
 
+<h4>Upgrading machines</h4>
+<p>Machines can be upgraded.
+   For example, you can upgrade Recharging station with parts such as Quadratic capacitors and Bluespace power cells.
+    NOTE: Borgs cant do this on their own so they appreciate engineers upgrading the chargers they use.</p>
 
+<h4>Flatpacker</h4>
+<p>Use Flatpacker machine to make a convenient deployable machine. The boxes are heavy, so use the craftable flatpacker cart to move multiple boxes of flatpacked machines fast.
+   Flatpack cart can be built with iron, plasteel and rods, use screwdriver to finish it.
+    Medical will be grateful if you make them couple of stasis beds and replace their regular beds. Setting up a Limb grover somewhere will help them as well.</p>
+
+<h4>Create EMP shielded SMES</h4>
+<p>You can use 10 sheets of reinforced plasma glass to upgrade SMESes to be shielded against EMPs. All singularity/tesla engines use an EMP-shielded SMES for the emitters by default.</p>
+
+<h4>Gravity not working, what do I do?</h4>
+<p>For moving, stay next to walls or objects. Throw something like paper to push yourself to opposite direction.</p>
+<p>Reasons why gravity can go off: Gravity anomalies going off, station powernet blackout (You must turn grav gen APC back on), manually turned off. Someone bombed it (check for damage on the gravgen).
+   A checklist for repairing: Check the APC is intact, breaker is on and machines arent turned off, gravgen itself is on, if there are gravity anomalies, check for gravgen damage.</p>
+   <p>Gravity generator can be utterly destroyed only by something like singulo/tesla, but it can be damaged and then you have to repair it with plasteel.</p>
+
+<h2>GENERAL INFO</h2>
 <h4>What does Xenobio even do other than release deadly aliens to the station?</h4>
 <p>Xenobiologist actually do something useful!
    They make passives, cubes that give the person carrying them powers such as regeneration, fire resistance, no need to breath and so on.</p> 
-
 
 </article1>
 
