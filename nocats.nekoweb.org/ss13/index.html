@@ -92,8 +92,17 @@
 <h4>Moving crates on shelves</h4>
 <p>Drag it as usual. Click and drag it onto the shelf. Thats also how you get it off. - Hold lmb and move your cursor over the shelf, then let go</p>
 
+<h4>Piggyback carry</h4>
+<p>You can drag you sprite on another player to piggyback. Presumably they have to accept this somehow with a button or something for it to actually happen?</p>
+
+<h4>PDA Pen</h4>
+<p>Use control leftclick on PDA to get a pen. Use pen on PDA to put it back.</p>
+
 <h4>Use of tools</h4>
 <p>Some construction/deconstruction tasks can require right click instead of left click. e.g deconstruct a shelf with wrench using right click. Remove broken floor tiles with crowbar. Open maintenane panels of airlocks, mod suits, machines, etc. with screwdriver.</p>
+
+<h4>Combat guide - TG wiki</h4>
+<p>Use TG wiki for combat, it should apply to Monke (Unsure how much but basic controls should apply?) https://wiki.tgstation13.org/Guide_to_Combat</p>
 
 <h4>Stacking hats in pile of hats and removing them from the stack</h4>
 <p>Shift right click pile of hats to remove hat. Spinning/flipping emote with hat on head removes hats too.</p>
@@ -227,6 +236,16 @@ For the PN setup you need Nitrogen (N2) and Carbon Dioxide (CO2), Plasma and Hyd
  Scrub N2 to 0% and then turn the scrubbers off. Then add CO2 and plasma. Then keep eye on the NT CIMS app on your PDA which shows the gas mix in the chamber.
 When its between 5000 to 10000 Kelvins and more than 20% Pluoxium add the Hydrogen.</p>
 
+<h4>Atmospherics Engineering</h4>
+<p>Essentially, make sure the air gas mixer does its thing, distro is receiving the mixed air quickly enough, fix breaches and fight fires.</p>
+<p>You can flush out creatures that can crawl in vents such as plague rats by increasing distro temperature high, for example 400C.</p>
+
+<h4>Using gas canisters and filling gas tanks</h4>
+<p>Gas tank can be filled with canister. Just click at canister with gas tank in hand and then open the valve and set value to pressure regulator on canister. Then close valve and detach the tank from canister.</p>
+
+<h4>Guide to breathable air</h4>
+<p>Humans need 16kpa of oxygen to breathe. It can be safely be pure oxygen, even if it is not realistic, at least for extended durations of time. Pro tip: Lets say you have tried to made a gas tank with pure oxygen but got some nitrogen mixed in it by accident. If you have gas tank with 99% oxygen and 1% of nitrogen, the default 16kpa setting in the gas tank is not enoug to give the user oxygen and they will take OXY damage. In this case increasing the pressure regulator setting to 17kpa is enough to turn the mix breathable.</p>
+
 <h2>TELECOMMUNICATIONS</h2>
 <p>Rebuilt Tcomms equipment needs to be linked to the rest for it to be fixed, putting the device together is not enough. Use multitool to connect the machines.</p>
 <p>To repair Tcomms you should have screwdriver, crowbar and multitool. RPED (Rapid part exchange device) helps working faster.</p>
@@ -234,6 +253,10 @@ When its between 5000 to 10000 Kelvins and more than 20% Pluoxium add the Hydrog
 <p>High temperature breaks processors, which is why Tcomms room is kept cold.</p>
 
 <h2>CARGO</h2>
+
+<h4>Stamping cargo documents</h4>
+<p>Approve stamp to yellow documents on crate, open with shift click and get green stamp on them or cargo loses money. Right click quickly stamps them without loading the paper view. White documents dont need approval and aren't sent back to CentCom. Scan the stamped documents with export scanner to see if it is correctly stamped. If it has value, it is correct, if negative value it is wrongly stamped, so add the other stamp.</p>
+
 <h4>Civilian bounties</h4>
 <p>Bounties can be done by anyone at the console outside cargo. Essentially you collect items and give the resulting bounty box to cargo to send to Centcom.
    Both cargo department and the player get money for completion of bounty at cargo. Here are couple of examples: Extendo hands; Pretty easy, you can make an extendo hand with a cyborg arm and a boxing glove.
@@ -249,10 +272,18 @@ When its between 5000 to 10000 Kelvins and more than 20% Pluoxium add the Hydrog
 <p>Stuff put into disposals goes to cargo. Stuff that continues onward from there goes to trash unless you wrap the items in boxes with wrapping paper and use destination tagger on then after setting destination department by activating tagger in hand.
    If no tag is set then it goes to trash, so be careful! You can use wrapping paper and destination tagging to send purchases to departments through disposals.</p>
 
+<h2>HEALING & WOUNDS</h2>
+<p>TG station wiki applies to Monke as well, presumably accurate enough for the basics: https://wiki.tgstation13.org/Health</p>
+<p>When you take damage, you accumulate a certain damage type to a body part. You can click the health doll to inspect yourself for damage in specific limbs.</p>
+<p>Basic healing supplies can be found in lockers and boxes around the station and can be used by anyone without requiring visit to medbay.</p>
+<p>Aside from the common damage types BRUTE, BURN, TOX and OXY, you can also have special wounds, such as bleeding wound that causes more damage as time goes on.</p>
+<p>You start with Epinephrine MediPen, also found in internals boxes and first-aid kits. This MediPen delivers mix of chemicals, and can be used either on a person in critical or on a dead person to reduce organ damage they take over time while dead, making revival easier.</p>
+<p>If you have bleeding wound on limb it appears as red color surrounding the body part on the health doll. To reduce bloodloss, grab click on yourself with empty hand, targeting the limb thats bleeding to put pressure on the wound. Arm cannot put pressure on itself, you must use the other on it. Sutures can heal blooding wounds if used on the right bodypart.</p>
+<p>Defib can revive dead player, but the same goes for using stunbaton or even makeshift stunprod on them.</p>
+
 <h2>GENERAL INFO</h2>
 <h4>Resources in machines</h4>
-<p>
-Resources to autolathes, techfabs and protolathes come from Ore silo in the Vault.
+<p>Resources to autolathes, techfabs and protolathes come from Ore silo in the Vault.
  You must link the machine ore silo by linking Ore silo to multitool and then using that multitool on the machine. This is how you relink lost links after machine damaged.</p>
 
 <h4>Dangers of plasmafloods</h4>
@@ -261,7 +292,16 @@ Resources to autolathes, techfabs and protolathes come from Ore silo in the Vaul
 
 <h4>What does Xenobio even do other than release deadly aliens to the station?</h4>
 <p>Xenobiologist actually do something useful!
-   They make passives, cubes that give the person carrying them powers such as regeneration, fire resistance, no need to breath and so on.</p> 
+   They make passives, cubes that give the person carrying them powers such as regeneration, fire resistance, no need to breath and so on. EDIT: Xenobio rework means they make less cubes, and thus are unlikely to give them away.</p> 
+
+<H2>SCIENCE</H2>
+<H4>Ordnance AKA Toxins</H4>
+<p>Get Oxygen canister to cold temperature and plasma canister to 600 kelvin at least. 1000 kelvin makes bigger bomb, you might want to upgrade the temperature machine to reach higher temps.</p>
+<p>Use shielding for the hot plasma canister so it wont break. Open valve with plasma container in the larger container and close the valve before removing the smaller plasma container or you die.</p>
+<p>Use Tank Transfer Valve and combine the two containers and add a screwdrivered trigger like remote signaler (that has been linked to another youll use to trigger the bomb, or voice activated signaler with a code word set.)</p>
+<p>Then you can simulate the bomb to ready anomalies or send them with the mass driver to the bomb site and blow them up there. Artifacts that explode can be blown up at bomb site as well, but the regular bombs might be too weak to be useful for science.</p>
+<p>Biggest artifact bombs cause stationwide alert, and those might be worth using for tests. Or just space em to be safe.</p>
+
 
 </article1>
 
